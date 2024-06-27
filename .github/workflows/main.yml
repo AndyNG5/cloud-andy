@@ -28,6 +28,8 @@ jobs:
         run: mvn clean install
       - name: Build with Maven
         run: ./mvnw package
-      # - name: Build Docker image
-      #   run: |
-      #     docker build -f src/main/docker/Dockerfile.jvm -t quarkus/accelerator-app-jvm .
+      - name: Build Docker image
+        run: |
+          docker build -f src/main/docker/Dockerfile.jvm -t quarkus/accelerator-app-andy-jvm .
+      # - name: Publish Docker image
+      #   run: 
