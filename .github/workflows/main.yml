@@ -54,5 +54,5 @@ jobs:
           name: accelerator-cloud-days-backend-andy
           location: 'westeurope'
           ports: '8080'
-          environment-variables: 'WEATHER_API_KEY=${{ env.WEATHER_API_KEY }}'
+          secure-environment-variables: 'WEATHER_API_KEY=${{ env.WEATHER_API_KEY }}'
       
