@@ -50,5 +50,5 @@ jobs:
           registry-username: ${{ secrets.REGISTRY_USERNAME }}
           registry-password: ${{ secrets.REGISTRY_PASSWORD }}
           name: accelerator-cloud-days-backend-andy
-          # location: 'west us'
+          location: 'westeurope'
       
