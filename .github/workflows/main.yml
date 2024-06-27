@@ -51,4 +51,5 @@ jobs:
           registry-password: ${{ secrets.REGISTRY_PASSWORD }}
           name: accelerator-cloud-days-backend-andy
           location: 'westeurope'
+          ports: '8080'
       
