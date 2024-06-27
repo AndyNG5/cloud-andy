@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      API_WEATHER_KEY: ${{ secrets.API_WEATHER_KEY }}
     defaults:
       run:
         working-directory: ./backend
@@ -52,4 +54,5 @@ jobs:
           name: accelerator-cloud-days-backend-andy
           location: 'westeurope'
           ports: '8080'
+          environment-variables: 'API_WEATHER_KEY=${{ env.API_WEATHER_KEY }}'
       
