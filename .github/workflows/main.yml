@@ -38,5 +38,5 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
       - run: |
-          docker build -f src/main/docker/Dockerfile.jvm -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/accelerator-cloud-days-backend-andy:${{ github.sha }}
+          docker build -f src/main/docker/Dockerfile.jvm -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/accelerator-cloud-days-backend-andy:${{ github.sha }} .
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/accelerator-cloud-days-backend-andy:${{ github.sha }}
